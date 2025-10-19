@@ -1,0 +1,107 @@
+
+
+.header {
+  display: flex;           /* Biar logo dan teks sejajar */
+  align-items: center;     /* Rata tengah secara vertikal */
+  gap: 15px;               /* Jarak antara logo dan teks */
+}
+
+.logo {
+  width: 80px;             /* Ukuran logo (bisa ubah sesuai kebutuhan) */
+  height: 80px;
+  border-radius: 50%;      /* Biar bulat kalau logonya kotak */
+}
+
+.judul {
+  color: rgb(132, 241, 223);       /* Warna teks */
+  font-size: 29px;         /* Ukuran font */
+  font-weight: bold;       /* Tebal */
+  text-shadow: -1px -1px 0 black,
+               1px -1px 0 black,
+              -1px  1px 0 black,
+               1px  1px 0 black; /* Kerangka hitam biar kelihatan */
+}
+
+
+.menu {
+  display: flex;
+  flex-wrap: wrap;         /* Biar bisa lebih dari satu baris */
+  gap: 20px;               /* Jarak antar item */
+  justify-content: center; /* Posisikan di tengah */
+}
+
+.item {
+  width: 200px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  text-align: center;
+  padding: 10px;
+  transition: 0.3s;
+}
+
+.item:hover {
+  transform: scale(1.05); /* Efek zoom dikit pas hover */
+}
+
+.item img {
+  width: 100%;
+  height: 150px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.item h3 {
+  margin: 10px 0 5px;
+  font-size: 18px;
+}
+
+.item p {
+  color: #333;
+  margin: 5px 0;
+}
+
+.item button {
+  background-color: #00c853;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.item button:hover {
+  background-color: #009624;
+}
+
+
+
+
+
+  table {
+      margin: 100px auto; /* biar tabel di tengah horizontal */
+      border-collapse: collapse;
+      width: 300px;
+      text-align: center;
+      background-color: white;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    th, td {
+      border: 1px solid #555;
+      padding: 10px;
+    }
+
+    th {
+      background-color: #00bfa5;
+      color: rgb(7, 4, 4);
+    }
+
+    caption {
+      font-weight: bold;
+      margin-bottom: 10px;
+      font-size: 18px;
+    }
